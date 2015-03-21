@@ -14,11 +14,11 @@
                 </div><!--//navbar-header-->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active nav-item"><%= link_to "Home", root_path %></li>
-                        <li class="nav-item"><%= link_to "About Us", pages_about_path %></li>
-                        <li class="nav-item"><%= link_to "Options", pages_options_path %></li>
+                        <li class="<%= 'active' if current_page?(root_path) %> nav-item"><%= link_to "Home", root_path %></li>
+                        <li class="<%= 'active' if current_page?(pages_about_path) %> nav-item"><%= link_to "About Us", pages_about_path %></li>
+                        <li class="<%= 'active' if current_page?(pages_options_path) %> nav-item"><%= link_to "Options", pages_options_path %></li>
                         <li class="nav-item"><a href="pricing.html">Pricing</a></li>                
-                        <li class="nav-item"><%= link_to "FAQ", pages_faq_path %></li>
+                        <li class="<%= 'active' if current_page?(pages_faq_path) %> nav-item"><%= link_to "FAQ", pages_faq_path %></li>
                         <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="signup.html">Contact Us</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
