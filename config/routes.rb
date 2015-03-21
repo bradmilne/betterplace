@@ -7,6 +7,8 @@ Betterplace::Application.routes.draw do
   root 'pages#home'
 
   get "pages/about"
+  get "pages/options"
+  get "pages/faq"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

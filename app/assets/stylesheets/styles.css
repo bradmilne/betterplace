@@ -1796,18 +1796,19 @@ select {
 }
 /* Single blog post */
 .blog-entry-wrapper {
-  padding-bottom: 80px;
+
 }
 .blog-entry-wrapper .blog-entry .blog-entry-heading {
   margin-bottom: 60px;
   position: relative;
-  height: 500px;
-  background: #253340 url('../images/blog/post-2.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #fff;
+  background: #253340;
+  background-image: url('options_background2.jpg');
+  background-repeat: no-repeat;
+
 }
 .blog-entry-wrapper .blog-entry .blog-entry-heading:after {
   content: "";
@@ -1826,7 +1827,7 @@ select {
   max-width: 700px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 120px;
+ 
 }
 .blog-entry-wrapper .blog-entry .blog-entry-heading .title {
   margin-bottom: 30px;
@@ -1887,7 +1888,7 @@ select {
 .blog-entry-wrapper .blog-entry .blog-entry-content h4.section-heading,
 .blog-entry-wrapper .blog-entry .blog-entry-content h5.section-heading,
 .blog-entry-wrapper .blog-entry .blog-entry-content h6.section-heading {
-  margin-top: 60px;
+
   margin-bottom: 30px;
 }
 .blog-entry-wrapper .blog-entry .blog-entry-content p {
@@ -1928,7 +1929,7 @@ select {
 }
 .blog-entry-wrapper .blog-entry .post-nav {
   margin-bottom: 60px;
-  margin-top: 60px;
+ 
 }
 .blog-entry-wrapper .blog-entry .post-nav .nav-next {
   float: right;
