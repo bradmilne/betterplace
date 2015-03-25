@@ -9,6 +9,10 @@ Betterplace::Application.routes.draw do
   get "pages/about"
   get "pages/options"
   get "pages/faq"
+  
+
+  resources :contacts, only: [:new, :create]
+  post 'new_contact' => 'contacts#create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

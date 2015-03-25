@@ -1,0 +1,84 @@
+ <%= render 'layouts/navigation' %>
+ <%= image_tag("contact_background.jpg") %>
+
+
+
+        
+        <!-- ******Contact Section****** --> 
+        <section class="contact-section section section-on-bg mobile-contact-header" style="margin-top: -400px; ">
+            <div class="container">
+                <h1 class="title text-center">Contact Us</h2>
+                <p class="intro text-center">We’d love to hear from you. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                 <%= form_for @contact, url: contacts_path, html: { class: "contact-form"} do |f| %>               
+                    <div class="row text-center">
+                        <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
+                            <div class="row">
+
+                          
+                            <%= render 'layouts/messages' %>
+                           
+
+                             <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <h4>Choose your option below</h4>
+                              <%= f.label :option, class: 'sr-only' %>
+                              <%= f.select :option, options_for_select(["I would like to reserve a place for myself", "I would like Better Place for ashes I currently possess", "I would like Better Place for ashes currently at a funeral home", "I operate a funeral home and would like to know more"]), {}, multiple: false, class: "form-control" %><br />
+                              </div>
+                              <div>
+                                <h4>Please provide us with some details</h4>
+                            </div>
+
+                              <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+
+                              <%= f.label :name, class: 'sr-only' %>
+                              <%= f.text_field :name, placeholder: "Your name", class: 'form-control', style: "height: 40px;" %><br />
+                              </div>
+
+                              <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                              <%= f.label :email, class: 'sr-only' %>
+                              <%= f.text_field :email, placeholder: "Your email", class: 'form-control', style: "height: 40px;" %><br />
+                              </div>
+
+                              <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                              <%= f.label :phone, class: 'sr-only' %>
+                              <%= f.text_field :phone, placeholder: "Your phone", class: 'form-control', style: "height: 40px;" %><br />
+                              </div>
+
+                              <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                <%= f.label :comments, class: 'sr-only' %>
+                                <%= f.text_area :comments, placeholder: "Enter any comments or questions here", class: "form-control",:rows => "6" %>
+                                </div>
+
+                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                    <%= f.submit 'Submit Details', class: 'btn btn-block btn-cta btn-cta-primary'  %>
+                                </div>  
+                            <% end %>
+                                          
+                            </div><!--//row-->
+                        </div>
+                    </div><!--//row-->
+                    <div id="form-messages"></div>
+                </form><!--//contact-form-->
+            </div><!--//container-->
+        </section><!--//contact-section-->
+        
+        <!-- ******Other Contact Section****** --> 
+        <section class="contact-other-section section">
+            <div class="container text-center">
+                <h2 class="title">Other ways to reach us</h2>
+                <p class="intro">You can also get in touch by phone or email at your convenience. </p>
+                <div class="row">
+                    <ul class=" list-unstyled col-md-6 col-sm-10 col-xs-12 col-md-offset-3 col-sm-offset-1 xs-offset-0" >
+                        <li><a href="#">brad@bradmilne.ca</a></li>
+                      
+                        <li><a href="tel:+0800123456">0800 123 456</a></li>
+                        <li>Queen Square <br /> 56 College Green Road<br />BS1 XR18<br />Bristol<br />UK</li>
+                    </ul>
+                </div><!--//row-->
+                <br /><br /><br /><br /><br />
+            </div><!--//container-->
+        </section><!--//contact-other-section-->
+
+
+
+<%= render 'layouts/footer' %>
