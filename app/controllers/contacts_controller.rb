@@ -13,6 +13,7 @@ class ContactsController < ApplicationController
     @comments = params[:contact][:comments]
     
   	if @contact.save
+      ContactMailer.notify_sales(@name, @option, @email, @phone, @comments).deliver
   	  redirect_to pages_thanks_path
   	else
   		render new_contact_path
