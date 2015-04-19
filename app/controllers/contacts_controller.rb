@@ -13,7 +13,7 @@ class ContactsController < ApplicationController
     @comments = params[:contact][:comments]
     
   	if @contact.save
-  	  redirect_to new_contact_path, :notice => "Thanks for contacting us! We'll be in touch shortly."
+  	  redirect_to pages_thanks_path
   	else
   		render new_contact_path
   		flash[:notice] = "Oops. Please enter the correct information and try again."

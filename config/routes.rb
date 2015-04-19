@@ -9,6 +9,7 @@ Betterplace::Application.routes.draw do
   get "pages/about"
   get "pages/options"
   get "pages/faq"
+  get "pages/thanks"
   
 
   resources :contacts, only: [:new, :create]
