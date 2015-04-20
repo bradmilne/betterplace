@@ -456,10 +456,64 @@ select {
   background-image: url('../images/background/bg-header-small-4.jpg');
 }
 /* ======= Promo ======= */
+
+.about_background {
+  padding-top: 120px;
+  position: relative;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image:url('about_background.jpg');
+  height: 263px;
+  z-index: 10;
+}
+
+.faq_background {
+  padding-top: 120px;
+  position: relative;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image:url('faq_background2.jpg');
+  height: 308px;
+  z-index: 10;
+}
+
+.contact_background {
+  padding-top: 120px;
+  position: relative;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image:url('contact_background.jpg');
+  height: 560px;
+  z-index: 10;
+}
+
+.options_background {
+  padding-top: 120px;
+  position: relative;
+  color: #ffffff;
+  
+  height: 424px;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image:url('options_background2.jpg');
+}
+
+
 .promo {
   padding-top: 120px;
   position: relative;
-  color: blue;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image:url('tree_bg5.jpg');
   margin-bottom: 80px;
   height: 560px;
