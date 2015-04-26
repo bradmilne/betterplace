@@ -488,7 +488,7 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image:url('contact_background.jpg');
+  background-image:url('muskoka_reflection_v2.jpg');
   height: 560px;
   z-index: 10;
 }
@@ -3452,4 +3452,8 @@ font-size: 17px;
   /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 480px) {
      .promo {padding-top: 50px !important;}   
+
+     .contact_offset {
+        margin-top: -430px !important; 
+}
     }
