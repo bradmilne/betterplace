@@ -514,11 +514,14 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image:url('tree_bg5.jpg');
+  background-image:url('muskoka_sunset_v4.jpg');
   margin-bottom: 80px;
   height: 560px;
   z-index: 10;
 }
+
+
+
 .promo .title {
   font-size: 46px;
   margin-bottom: 20px;
@@ -527,7 +530,7 @@ select {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 .promo.section .intro {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -649,6 +652,11 @@ select {
   position: absolute;
   left: 80px;
   top: 25px;
+}
+
+.desc p {
+font-size: 17px;
+
 }
 .why .item .quote blockquote {
   border-left: none;
@@ -2126,6 +2134,8 @@ select {
   position: relative;
   z-index: 10;
 }
+
+
 .story-section .title {
   font-size: 36px;
   margin-bottom: 60px;
@@ -2988,7 +2998,7 @@ select {
     left: 0;
     top: 90px;
     position: absolute;
-    background: #253340;
+    background: #ffffff;
     z-index: 45;
   }
   .navbar-collapse .nav {
@@ -3436,4 +3446,10 @@ select {
   .mobile-contact-header {
     margin-top: -100px !important;
   }
+
 }
+
+  /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 480px) {
+     .promo {padding-top: 50px !important;}   
+    }
