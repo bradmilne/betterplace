@@ -43,17 +43,23 @@
 	font-size: 26px;
 }
 
-.options_title_grove {
+.options_title h3 {
+	font-family: 'Open Sans', sans-serif;
+	color: #00661E;
+	font-size: 28px;
+}
+
+.options_title_memorial {
 	padding: 5px;
 	margin-bottom: 5px;
 }
 
-.options_title_grove p {
+.options_title_memorial p {
 	font-family: 'Bevan', sans-serif;
 	color: #00661E;
 }
 
-.options_title_grove h4 {
+.options_title_memorial h4 {
 	font-family: 'Bevan', sans-serif;
 	color: #00661E;
 	font-size: 40px;
@@ -120,12 +126,12 @@ min-height: 600px;
 }
 
 .grove_price p {
-	font-size: 28px;
+	font-size: 32px;
 }
 
 .pricing_fine_print {
 	text-align: center;
-	font-size: 10px;
+	font-size: 12px;
 	margin-top: 40px;
 }
 
