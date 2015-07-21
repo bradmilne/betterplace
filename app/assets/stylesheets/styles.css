@@ -464,8 +464,8 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image:url('about_background.jpg');
-  height: 263px;
+  background-image:url('about_background.png');
+  height: 424px;
   z-index: 10;
 }
 
@@ -476,8 +476,8 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image:url('faq_background2.jpg');
-  height: 308px;
+  background-image:url('faq_cover.png');
+  height: 424px;
   z-index: 10;
 }
 
@@ -488,7 +488,7 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image:url('muskoka_reflection_v2.jpg');
+  background-image:url('contact_cover.png');
   height: 560px;
   z-index: 10;
 }
@@ -503,7 +503,7 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image:url('options_background2.jpg');
+  background-image:url('options_cover.png');
 }
 
 
@@ -515,6 +515,7 @@ select {
   background-position: center;
   background-size: cover;
   background-image:url('muskoka_sunset_v6.jpg');
+  background-image:url('yosemite_home.png');
   margin-bottom: 80px;
   height: 560px;
   z-index: 10;
