@@ -3458,4 +3458,20 @@ font-size: 17px;
      .contact_offset {
         margin-top: -430px !important; 
 }
+
+     .about_header {
+      margin-top: -25px !important;
+     }
+
+     .faq_header {
+      margin-top: 0px !important;
+     }
+
+     .options_header {
+      margin-top: -20px !important;
+     }
+
+     .contact_header {
+      margin-top: -40px !important;
+     }
     }
