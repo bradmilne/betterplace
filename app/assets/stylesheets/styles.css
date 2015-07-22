@@ -235,6 +235,7 @@ select {
 }
 .header .main-nav {
   margin-top: 15px;
+    margin-top: 0px;
 }
 .header .main-nav .navbar-toggle {
   margin-right: 0;
@@ -3316,6 +3317,7 @@ font-size: 17px;
   }
   .main-nav {
     float: right !important;
+    float: none !important;
   }
   .navbar-form .form-control {
     width: 280px;

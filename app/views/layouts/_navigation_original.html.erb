@@ -1,17 +1,16 @@
-
-<div class="container header">     
-        <nav class="main-nav" role="navigation">
+<header id="header" class="header">  
+    <div class="container">       
+        <a href="/" style="padding-top: 5px;"><%= image_tag('bp_logo.png') %></a>
+        <nav class="main-nav navbar-right" role="navigation">
             <div class="navbar-header">
-               <a href="/" class="pull-left;" style="margin-top: -5px;"><%= image_tag('bp_logo.png') %></a>  
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button><!--//nav-toggle-->
-
             </div><!--//navbar-header-->
-            <div id="navbar-collapse" class="navbar-collapse collapse  navbar-right" style="margin-top: 15px;">
+            <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="<%= 'active' if current_page?(root_path) %> nav-item"><%= link_to "Home", root_path %></li>
                     <li class="<%= 'active' if current_page?(pages_about_path) %> nav-item"><%= link_to "About Us", pages_about_path %></li>
@@ -23,3 +22,4 @@
             </div><!--//navabr-collapse-->
         </nav><!--//main-nav-->                     
     </div><!--//container-->
+</header><!--//header-->
